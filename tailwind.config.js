@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: [
+    './components/**/*.{vue,js}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './app.vue',
+  ],
   theme: {
-    extend: {},
+    extend: {}, // убираем max-sm
   },
   plugins: [],
 }
+
 
